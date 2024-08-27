@@ -1,0 +1,62 @@
+[
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/acme/api/product/1b2da7cc-b367-4196-8a78-9cfeec21f587"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": "{
+                  \"id\": \"1b2da7cc-b367-4196-8a78-9cfeec21f587\",
+                  \"name\": \"Seguro de Vida\",
+                  \"created_at\": \"2021-07-01T00:00:00Z\",
+                  \"active\": true,
+                  \"offers\": [
+                      \"adc56d77-348c-4bf0-908f22d402ee715c\",
+                      \"bdc56d77-348c-4bf0-908f22d402ee715c\",
+                      \"ddc56d77-348c-4bf0-908f22d402ee715c\"
+                  ]}",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  },
+
+
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/acme/api/offer/adc56d77-348c-4bf0-908f22d402ee715c"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": "{
+                  \"id\": \"adc56d77-348c-4bf0-908f22d402ee715c\",
+                  \"product_id\": \"1b2da7cc-b367-4196-8a78-9cfeec21f587\",
+                  \"name\": \"Seguro de Vida\",
+                  \"created_at\": \"2021-07-01T00:00:00Z\",
+                  \"active\": true,
+                  \"coverages\":{
+                    \"Incêndio\": 50000.00,
+                    \"Desastres naturais\": 60000.00,
+                    \"Responsabilidade civil\": 80000.00,
+                    \"Roubo\": 10000.00
+                  },
+                  \"assistences\": [
+                    \"Encanador\",
+                    \"Eletrecista\",
+                    \"Chaveiro 24h\",
+                    \"Assitência Funerária\"
+                  ],
+                  \"monthly_premium_amount\": {
+                    \"max_amount\": 100.74,
+                    \"min_amount\": 50.00,
+                    \"suggested_amount\": 60.25
+                  }
+                }",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+]
